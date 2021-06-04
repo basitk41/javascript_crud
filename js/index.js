@@ -80,6 +80,7 @@ function setUsers() {
   const filteredUsers = search(users, query);
   const output = filteredUsers.map((user, i) => {
     return `<tr>
+        <td><input type="checkbox" /></td>
         <td>${user.name}</td>
         <td>${user.age}</td>
         <td>${user.address}</td>
